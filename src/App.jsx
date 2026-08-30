@@ -1,21 +1,26 @@
+// src/App.jsx
 import { useState, useEffect, useRef } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Home from './components/Home';     // or './pages/Home' – adjust to your path
-import Cart from './components/Cart';     // adjust path if needed
+import Home from './components/Home';
+import Cart from './components/Cart';
+import About from './components/About';        // <-- new import
+import LoadingScreen from './components/LoadingScreen';
 import './App.css';
 
 function App() {
-  // --- Search state ---
+  const [initialLoading, setInitialLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
-
-  // --- Navbar visibility ---
   const [isNavVisible, setIsNavVisible] = useState(true);
   const [navbarHeight, setNavbarHeight] = useState(0);
   const navbarRef = useRef(null);
   const lastScrollY = useRef(0);
 
-  // Scroll listener for navbar hide/show
+  useEffect(() => {
+    const timer = setTimeout(() => setInitialLoading(false), 1500);
+    return () => clearTimeout(timer);
+  }, []);
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -26,12 +31,10 @@ function App() {
       }
       lastScrollY.current = currentScrollY;
     };
-
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Measure navbar height after render
   useEffect(() => {
     if (navbarRef.current) {
       setNavbarHeight(navbarRef.current.offsetHeight);
@@ -40,12 +43,13 @@ function App() {
 
   return (
     <Router>
+      {initialLoading && <LoadingScreen />}
       <div className="app">
         <Navbar
           ref={navbarRef}
           isVisible={isNavVisible}
-          searchTerm={searchTerm}          // <-- added
-          setSearchTerm={setSearchTerm}    // <-- added
+          searchTerm={searchTerm}
+          setSearchTerm={setSearchTerm}
         />
         <Routes>
           <Route
@@ -54,11 +58,12 @@ function App() {
               <Home
                 isNavVisible={isNavVisible}
                 navbarHeight={navbarHeight}
-                searchTerm={searchTerm}    // <-- added
+                searchTerm={searchTerm}
               />
             }
           />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/product/:id" element={<About />} />   {/* new route */}
         </Routes>
       </div>
     </Router>

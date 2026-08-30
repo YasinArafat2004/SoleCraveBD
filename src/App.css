@@ -442,3 +442,291 @@ footer {
     height: 300px !important;
   }
 }
+
+/* --- OFFER SLIDER --- */
+.offer-slider {
+  margin: 1.5rem 0 2rem 0;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  will-change: transform;
+}
+
+.slide {
+  min-width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.slide-overlay {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+}
+
+.slide-overlay h2 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.slide-overlay p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Dots */
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.8rem 0;
+  background: #fff;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dot.active {
+  background: #fca311;
+}
+
+/* --- Mobile adjustment for slider --- */
+@media (max-width: 768px) {
+  .slide {
+    height: 200px;
+  }
+  .slide-overlay h2 {
+    font-size: 1.4rem;
+  }
+  .slide-overlay p {
+    font-size: 1rem;
+  }
+  .slide-overlay {
+    bottom: 15%;
+    left: 5%;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+/* --- LOADING SCREEN STYLES --- */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeOut 0.5s ease forwards;
+  animation-delay: 1.5s; /* show for 1.5s then fade out */
+}
+
+/* If you want to hide it programmatically via React state instead of CSS animation,
+   you can remove the animation and animation-delay above and use a class .hide */
+.loading-screen.hide {
+  animation: fadeOut 0.5s ease forwards;
+}
+
+.loading-content {
+  text-align: center;
+}
+
+.loading-brand {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #fca311;
+  letter-spacing: 4px;
+  animation: pulse 1.5s ease-in-out infinite;
+  margin-bottom: 1.5rem;
+}
+
+.loading-spinner {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f0f0f0;
+  border-top-color: #fca311;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.7;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* src/components/About.css */
+.about-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.back-arrow {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #333;
+  margin-bottom: 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.back-arrow:hover {
+  color: #fca311;
+}
+
+.product-detail {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.product-image-section {
+  flex: 1 1 400px;
+}
+
+.detail-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.thumbnail-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.thumbnail {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.3s;
+}
+.thumbnail:hover {
+  border-color: #fca311;
+}
+
+.product-info-section {
+  flex: 1 1 300px;
+}
+
+.product-info-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-price {
+  font-size: 2rem;
+  color: #fca311;
+  font-weight: 800;
+  margin: 1rem 0;
+}
+
+.product-category {
+  color: #888;
+  margin-bottom: 1.5rem;
+}
+
+.size-selector {
+  margin: 1.5rem 0;
+}
+.size-selector label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+.size-selector select {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 100%;
+  max-width: 200px;
+  font-size: 1rem;
+}
+
+.add-to-cart-detail {
+  width: 100%;
+  padding: 1rem;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.add-to-cart-detail:hover {
+  background-color: #fca311;
+  color: #222;
+}
+
+.product-not-found {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 4rem;
+}

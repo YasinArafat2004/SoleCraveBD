@@ -74,7 +74,7 @@ export const products = [
   { 
     id: 7, 
     name: "A1 Paste", 
-    image: "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/A1%20low%20paste.jpg", 
+    image: "https://res.cloudinary.com/a94ialuw/image/upload/v1788108309/photo_2026-05-16_17-25-05.jpg", 
     price: 1999, 
     category: "Woman",
     images: [
@@ -116,7 +116,7 @@ export const products = [
     images: [
       "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/jordan%203%20blackcat.jpg",
       "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/jordan%203%20blackcat.jpg",
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/jordan%203%20blackcat.jpg"
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1788108309/photo_2026-05-16_17-25-05.jpg"
     ]
   },
   { 
