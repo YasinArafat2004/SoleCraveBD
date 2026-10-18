@@ -1,146 +1,158 @@
 export const products = [
   { 
     id: 1, 
-    name: "Jordan-4 B/W", 
-    image: "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/black.jpg", 
-    price: 2499, 
+    name: "Mind 001 blue light", 
+    image: "https://res.cloudinary.com/a94ialuw/image/upload/v1788600104/IMG_1085.jpg", 
+    price: 3000, 
     category: "Man",
     images: [
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/black.jpg",
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/black.jpg",
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/black.jpg"
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1788600110/IMG_1083.jpg",
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1788600111/IMG_1084.jpg"
     ]
   },
   { 
     id: 2, 
-    name: "Travis Scott", 
-    image: "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/travis%20scott.jpg", 
-    price: 2299, 
+    name: "New Balance 9060 black castlerock", 
+    image: "https://res.cloudinary.com/a94ialuw/image/upload/v1788600108/IMG_0737.jpg", 
+    price: 3500, 
     category: "Man",
     images: [
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/travis%20scott.jpg",
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/travis%20scott.jpg",
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/travis%20scott.jpg"
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1788600110/IMG_0731.jpg",
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1788600111/IMG_0740.jpg",
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1788600105/IMG_0741.jpg"
     ]
   },
   { 
     id: 3, 
-    name: "Paris", 
-    image: "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/paris.jpg", 
-    price: 2199, 
+    name: "Nike SB Dunk Low TRD", 
+    image: "https://res.cloudinary.com/a94ialuw/image/upload/v1788600105/IMG_0075.jpg", 
+    price: 3500, 
     category: "Woman",
     images: [
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/paris.jpg",
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/paris.jpg",
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/paris.jpg"
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1788600106/IMG_0071.jpg",
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1788600105/IMG_0070.jpg",
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1788600105/IMG_0072.jpg"
     ]
   },
   { 
     id: 4, 
-    name: "Dior", 
-    image: "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/Dior.jpg", 
-    price: 2399, 
+    name: "Adidas adizero evo sl-Black", 
+    image: "https://res.cloudinary.com/a94ialuw/image/upload/v1788600108/IMG_0062.jpg", 
+    price: 3500, 
     category: "Man",
     images: [
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/Dior.jpg",
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/Dior.jpg",
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/Dior.jpg"
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1788600108/IMG_0066.jpg",
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1788600109/IMG_0063.jpg",
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1788600112/IMG_0065.jpg"
     ]
   },
   { 
     id: 5, 
-    name: "A1 Black High", 
-    image: "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/A1%20black%20high.jpg", 
-    price: 2199, 
+    name: "Nike Zion", 
+    image: "https://res.cloudinary.com/a94ialuw/image/upload/v1792331904/IMG_9943.jpg", 
+    price: 3000, 
     category: "Man",
     images: [
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/A1%20black%20high.jpg",
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/A1%20black%20high.jpg",
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/A1%20black%20high.jpg"
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1792331905/IMG_9947.jpg",
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1792331906/IMG_9944.jpg",
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1792331906/IMG_9945.jpg"
     ]
   },
   { 
     id: 6, 
-    name: "Blue Low", 
-    image: "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/A1%20blue%20low.jpg", 
-    price: 1999, 
+    name: "Adidas campus 00 grey", 
+    image: "https://res.cloudinary.com/a94ialuw/image/upload/v1792332644/IMG_7060.jpg", 
+    price: 2500, 
     category: "Woman",
     images: [
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/A1%20blue%20low.jpg",
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/A1%20blue%20low.jpg",
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/A1%20blue%20low.jpg"
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1792332645/IMG_7061.jpg",
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1792332646/IMG_7063.jpg",
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1792332645/IMG_7062.jpg"
     ]
   },
   { 
     id: 7, 
-    name: "A1 Paste", 
-    image: "https://res.cloudinary.com/a94ialuw/image/upload/v1788108309/photo_2026-05-16_17-25-05.jpg", 
-    price: 1999, 
+    name: "Air Force 1 triple white", 
+    image: "https://res.cloudinary.com/a94ialuw/image/upload/v1792332638/IMG_7393.jpg", 
+    price: 2600, 
     category: "Woman",
     images: [
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/A1%20low%20paste.jpg",
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/A1%20low%20paste.jpg",
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/A1%20low%20paste.jpg"
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1792332639/IMG_7394.jpg",
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1792332639/IMG_7396.jpg",
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1792332640/IMG_7395.jpg"
     ]
   },
   { 
     id: 8, 
-    name: "Uni High", 
-    image: "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/University%20Blue.jpg", 
-    price: 2199, 
+    name: "Jordan 1 mocha", 
+    image: "https://res.cloudinary.com/a94ialuw/image/upload/v1792332633/IMG_7695.jpg", 
+    price: 2300, 
     category: "Man",
     images: [
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/University%20Blue.jpg",
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/University%20Blue.jpg",
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/University%20Blue.jpg"
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1792332633/IMG_7697.jpg",
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1792332633/IMG_7699.jpg",
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1792332634/IMG_7698.jpg"
     ]
   },
   { 
     id: 9, 
-    name: "A1 Green", 
-    image: "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/green%20low.jpg", 
-    price: 1999, 
-    category: "Woman",
+    name: "New Balance 9060 Grey Day", 
+    image: "https://res.cloudinary.com/a94ialuw/image/upload/v1788934590/IMG_9916.jpg", 
+    price: 3000, 
+    category: "Man",
     images: [
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/green%20low.jpg",
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/green%20low.jpg",
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/green%20low.jpg"
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1788934593/IMG_9919.jpg",
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1788934590/IMG_9917.jpg",
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1788934594/IMG_9920.jpg",
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1788934591/IMG_9918.jpg"
     ]
   },
   { 
     id: 10, 
-    name: "Jordan 3", 
-    image: "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/jordan%203%20blackcat.jpg", 
-    price: 2599, 
+    name: "travis scott Black Dark Grey", 
+    image: "https://res.cloudinary.com/a94ialuw/image/upload/v1792332635/IMG_2003.jpg", 
+    price: 2300, 
     category: "Man",
     images: [
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/jordan%203%20blackcat.jpg",
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/jordan%203%20blackcat.jpg",
-      "https://res.cloudinary.com/a94ialuw/image/upload/v1788108309/photo_2026-05-16_17-25-05.jpg"
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1792332634/IMG_7616.jpg",
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1792332634/IMG_7617.jpg",
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1792332634/IMG_7619.jpg"
     ]
   },
   { 
     id: 11, 
-    name: "Jordan-4 Blue", 
-    image: "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/jordan%204%20blue.jpg", 
-    price: 2499, 
+    name: "campus black", 
+    image: "https://res.cloudinary.com/a94ialuw/image/upload/v1792332635/IMG_7657.jpg", 
+    price: 2500, 
     category: "Man",
     images: [
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/jordan%204%20blue.jpg",
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/jordan%204%20blue.jpg",
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/jordan%204%20blue.jpg"
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1792332635/IMG_7661.jpg",
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1792332636/IMG_7658.jpg",
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1792332635/IMG_7659.jpg"
     ]
   },
   { 
     id: 12, 
-    name: "Jordan-4 White", 
-    image: "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/jorjan%204%20white.jpg", 
+    name: "Nike J1 Guava Ice", 
+    image: "https://res.cloudinary.com/a94ialuw/image/upload/v1792333819/IMG_7388.jpg", 
     price: 2499, 
     category: "Woman",
     images: [
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/jorjan%204%20white.jpg",
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/jorjan%204%20white.jpg",
-      "https://raw.githubusercontent.com/YasinArafat2004/react-assets/main/jorjan%204%20white.jpg"
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1792332637/IMG_7389.jpg",
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1792332637/IMG_7390.jpg",
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1792332638/IMG_7391.jpg"
+    ]
+  },
+  { 
+    id: 13, 
+    name: "Mind 001 off-white", 
+    image: "https://res.cloudinary.com/a94ialuw/image/upload/v1788600111/IMG_0297.jpg", 
+    price: 2499, 
+    category: "Woman",
+    images: [
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1788600113/IMG_0292.jpg",
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1788600113/IMG_0293.jpg",
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1788600113/IMG_0296.jpg"
     ]
   }
 ];
