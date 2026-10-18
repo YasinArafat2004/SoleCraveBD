@@ -61,7 +61,7 @@ function App() {
 
   return (
     <CartProvider>
-      <Router>
+      <Router basename="/SoleCraveBD">
         {initialLoading && <LoadingScreen isFading={isSplashFading} />}
         <div className="app">
           <Navbar
