@@ -16,7 +16,7 @@ const Card = ({ product }) => {
       <h3>{product.name}</h3>
       <p>{product.price} ট</p>
       <button className="cta-btn" onClick={handleButtonClick}>
-        Select Size
+        Order Now
       </button>
     </div>
   );

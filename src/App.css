@@ -1760,3 +1760,38 @@ textarea:focus-visible {
     font-size: 1.1rem;
   }
 }
+
+/* --- FACEBOOK BROWSER ALERT --- */
+.fb-browser-alert {
+  background-color: #ffeb3b; /* Warning yellow */
+  color: #333;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+  z-index: 10000;
+  position: relative;
+}
+
+.fb-browser-alert p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.fb-alert-close {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.fb-alert-close:hover {
+  background-color: #555;
+}

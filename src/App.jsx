@@ -8,6 +8,7 @@ import Cart from './components/Cart';
 import About from './components/About';
 import LoadingScreen from './components/LoadingScreen';
 import Footer from './components/Footer';
+import FacebookBrowserAlert from './components/FacebookBrowserAlert';
 import './App.css';
 
 const SPLASH_VISIBLE_MS = 1500;
@@ -64,6 +65,10 @@ function App() {
       <Router basename="/SoleCraveBD">
         {initialLoading && <LoadingScreen isFading={isSplashFading} />}
         <div className="app">
+
+        {initialLoading && <LoadingScreen />}
+          <FacebookBrowserAlert />
+
           <Navbar
             ref={navbarRef}
             isVisible={isNavVisible}

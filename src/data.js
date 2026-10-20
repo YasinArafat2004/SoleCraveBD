@@ -154,5 +154,17 @@ export const products = [
       "https://res.cloudinary.com/a94ialuw/image/upload/v1788600113/IMG_0293.jpg",
       "https://res.cloudinary.com/a94ialuw/image/upload/v1788600113/IMG_0296.jpg"
     ]
+  },
+  {
+    id: 14,
+    name: "Adidas charcoal black",
+    image: "https://res.cloudinary.com/a94ialuw/image/upload/v1792494960/IMG_20260926_133016_341.jpg",
+    price: 2500,
+    category: "Man",
+    images: [
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1792494958/IMG_20260926_132953_049.jpg",
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1792332637/IMG_7632.jpg",
+      "https://res.cloudinary.com/a94ialuw/image/upload/v1792332637/IMG_7633.jpg"
+    ]
   }
 ];
