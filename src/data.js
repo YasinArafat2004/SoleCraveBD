@@ -3,8 +3,9 @@ export const products = [
     id: 1, 
     name: "Mind 001 blue light", 
     image: "https://res.cloudinary.com/a94ialuw/image/upload/v1788600104/IMG_1085.jpg", 
+    brand: "nike",
     price: 3000, 
-    category: "Man",
+    category: "All",
     images: [
       "https://res.cloudinary.com/a94ialuw/image/upload/v1788600110/IMG_1083.jpg",
       "https://res.cloudinary.com/a94ialuw/image/upload/v1788600111/IMG_1084.jpg"
@@ -14,8 +15,9 @@ export const products = [
     id: 2, 
     name: "New Balance 9060 black castlerock", 
     image: "https://res.cloudinary.com/a94ialuw/image/upload/v1788600108/IMG_0737.jpg", 
+    brand: "new balance",
     price: 3500, 
-    category: "Man",
+    category: "All",
     images: [
       "https://res.cloudinary.com/a94ialuw/image/upload/v1788600110/IMG_0731.jpg",
       "https://res.cloudinary.com/a94ialuw/image/upload/v1788600111/IMG_0740.jpg",
@@ -26,6 +28,7 @@ export const products = [
     id: 3, 
     name: "Nike SB Dunk Low TRD", 
     image: "https://res.cloudinary.com/a94ialuw/image/upload/v1788600105/IMG_0075.jpg", 
+    brand: "nike",
     price: 3500, 
     category: "Woman",
     images: [
@@ -38,6 +41,7 @@ export const products = [
     id: 4, 
     name: "Adidas adizero evo sl-Black", 
     image: "https://res.cloudinary.com/a94ialuw/image/upload/v1788600108/IMG_0062.jpg", 
+    brand: "adidas",
     price: 3500, 
     category: "Man",
     images: [
@@ -50,6 +54,7 @@ export const products = [
     id: 5, 
     name: "Nike Zion", 
     image: "https://res.cloudinary.com/a94ialuw/image/upload/v1792331904/IMG_9943.jpg", 
+    brand: "nike",
     price: 3000, 
     category: "Man",
     images: [
@@ -62,6 +67,7 @@ export const products = [
     id: 6, 
     name: "Adidas campus 00 grey", 
     image: "https://res.cloudinary.com/a94ialuw/image/upload/v1792332644/IMG_7060.jpg", 
+    brand: "adidas",
     price: 2500, 
     category: "Woman",
     images: [
@@ -74,6 +80,7 @@ export const products = [
     id: 7, 
     name: "Air Force 1 triple white", 
     image: "https://res.cloudinary.com/a94ialuw/image/upload/v1792332638/IMG_7393.jpg", 
+    brand: "nike",
     price: 2600, 
     category: "Woman",
     images: [
@@ -86,6 +93,7 @@ export const products = [
     id: 8, 
     name: "Jordan 1 mocha", 
     image: "https://res.cloudinary.com/a94ialuw/image/upload/v1792332633/IMG_7695.jpg", 
+    brand: "nike",
     price: 2300, 
     category: "Man",
     images: [
@@ -98,6 +106,7 @@ export const products = [
     id: 9, 
     name: "New Balance 9060 Grey Day", 
     image: "https://res.cloudinary.com/a94ialuw/image/upload/v1788934590/IMG_9916.jpg", 
+    brand:"new balance",
     price: 3000, 
     category: "Man",
     images: [
@@ -111,6 +120,7 @@ export const products = [
     id: 10, 
     name: "travis scott Black Dark Grey", 
     image: "https://res.cloudinary.com/a94ialuw/image/upload/v1792332635/IMG_2003.jpg", 
+    brand: "nike",
     price: 2300, 
     category: "Man",
     images: [
@@ -147,6 +157,7 @@ export const products = [
     id: 13, 
     name: "Mind 001 off-white", 
     image: "https://res.cloudinary.com/a94ialuw/image/upload/v1788600111/IMG_0297.jpg", 
+    brand: "nike",
     price: 2499, 
     category: "Woman",
     images: [
@@ -159,6 +170,7 @@ export const products = [
     id: 14,
     name: "Adidas charcoal black",
     image: "https://res.cloudinary.com/a94ialuw/image/upload/v1792494960/IMG_20260926_133016_341.jpg",
+    brand: "adidas",
     price: 2500,
     category: "Man",
     images: [

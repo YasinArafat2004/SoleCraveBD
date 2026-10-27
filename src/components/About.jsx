@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { useCart } from './CartContext';
 import OrderModal from './OrderModal';
 import { SHOE_SIZES } from '../constants';
+import ShareButton from './ShareButton'; // <-- Import the new component
 
 const About = () => {
   const { id } = useParams();
@@ -27,7 +28,6 @@ const About = () => {
     );
   }
 
-  // Only show a thumbnail row when there's actually more than one distinct photo.
   const uniqueImages = Array.from(
     new Set([product.image, ...(product.images || [])].filter(Boolean))
   );
@@ -52,7 +52,7 @@ const About = () => {
   const buildMessage = ({ name, address, phone }) => `Order Details:
 Product: ${product.name}
 Size: ${selectedSize}
-Price: $${product.price}
+Price: ${product.price} ট
 Name: ${name}
 Address: ${address}
 Phone: ${phone}`;
@@ -83,7 +83,12 @@ Phone: ${phone}`;
         </div>
 
         <div className="product-info-section">
-          <h1>{product.name}</h1>
+          {/* Added the share button next to the title */}
+          <div className="title-share-row">
+            <h1>{product.name}</h1>
+            <ShareButton product={product} />
+          </div>
+          
           <p className="product-price">{product.price} ট</p>
           <p className="product-category">Category: {product.category}</p>
 
@@ -127,7 +132,7 @@ Phone: ${phone}`;
               <p>
                 <strong>Size:</strong> {selectedSize}
               </p>
-              <p className="total-preview">Total: ${product.price}</p>
+              <p className="total-preview">Total: {product.price} ট</p>
             </>
           }
         />
